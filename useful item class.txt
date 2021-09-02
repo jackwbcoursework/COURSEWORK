@@ -1,0 +1,6 @@
+class Item(pg.sprite.Sprite):
+    def __init__(self, game, ):
+        self.groups = game.all_sprites
+        pg.sprite.Sprite.__init__(self, self.groups)
+        self.image = pg.Surface(())
+        self.rect = self.image.get_rect()
